@@ -1,0 +1,35 @@
+.dock{
+    display: flex;
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(63, 63, 63,0.395);
+    padding-inline: 0.75rem;
+    border-radius: 0.75rem;
+    -webkit-backdrop-filter:blur(50px);
+    backdrop-filter: (50px);
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+
+    
+
+    
+
+    .icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .icon img{
+        width: 3.5rem;
+    }
+    .icon:hover{
+        transform: scale(1.25) translateY(-20%);
+    }
+    .icon:hover + .icon,
+    .icon:has(+ .icon:hover)
+    {
+        transform: scale(1.1) translateY(-10%);
+    }
+
+}

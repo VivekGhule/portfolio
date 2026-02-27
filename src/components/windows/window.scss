@@ -1,0 +1,51 @@
+.window{
+    height: 100%;
+    background-color: #000;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    color: rgb(160, 160, 160);
+
+    .nav{
+        display: flex;
+        align-items: center; 
+        gap: 2rem;
+        padding-inline: 0.75rem;
+        padding-block: 0.5rem;
+        border-bottom: 1px solid rgba(245, 245, 245, 0.24);
+        
+
+        .dots{
+            display: flex;
+            gap: 0.25rem;
+
+
+            .dot{
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+            }
+            .red{
+                background-color: #eb3535;
+                cursor:auto;
+            }
+            .yellow{
+                background-color: #ebe035;
+            }
+            .green{
+                background-color: #35eb35;
+            }
+
+        }
+    }
+    .main-contain{
+        height: 100%;
+    }
+
+    *::-webkit-scrollbar{
+        width: 8px;
+    }
+    *::-webkit-scrollbar-thumb{
+        background-color: rgba(168,168,168,0.4);
+        border-radius: 4px;
+    }
+}
